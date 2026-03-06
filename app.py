@@ -58,8 +58,8 @@ input_dict = dict(
 '''
 ### The price of your run will be around 
 '''
-url_gcd = 'https://taxifare2-1019299236606.europe-west1.run.app/predict'
-# url = 'https://taxifare.lewagon.ai/predict'
+
+url_gcd = st.secrets.gcp_api.key
 
 response = requests.get(url_gcd, params = input_dict)
 data = response.json()
