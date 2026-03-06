@@ -59,7 +59,7 @@ input_dict = dict(
 ### The price of your run will be around 
 '''
 
-url_gcd = st.secrets.gcp_api.key
+url_gcd = st.secrets['gcp_api']['key']
 
 response = requests.get(url_gcd, params = input_dict)
 data = response.json()
