@@ -28,10 +28,10 @@ pickup_datetime = datetime.datetime.combine(d, t)
 columns = st.columns(2)
 
 
-lat_pickup  = columns[0].number_input('Pick-up latitude',   value=40.7128, step=0.01, format="%.4f")
-long_pickup = columns[0].number_input('Pick-up longitude',  value=-74.0060, step=0.01, format="%.4f")
-lat_dropoff  = columns[1].number_input('Drop-off latitude',  value=40.7580, step=0.01, format="%.4f")
-long_dropoff = columns[1].number_input('Drop-off longitude', value=-73.9855, step=0.01, format="%.4f")
+lat_pickup  = columns[0].number_input('Pick-up latitude',   value=40.7128, step=0.001, format="%.4f")
+long_pickup = columns[0].number_input('Pick-up longitude',  value=-74.0060, step=0.001, format="%.4f")
+lat_dropoff  = columns[1].number_input('Drop-off latitude',  value=40.7580, step=0.001, format="%.4f")
+long_dropoff = columns[1].number_input('Drop-off longitude', value=-73.9855, step=0.001, format="%.4f")
 
 
 def get_map_data(center_lat, center_lon):
